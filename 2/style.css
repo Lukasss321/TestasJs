@@ -2,9 +2,12 @@
   padding: 0;
   margin: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 :root {
-  --backround-colot-main: rgb(73, 73, 175);
-  --backround-colot-secondary: rgb(17, 17, 189);
+  --backround-colot-main: rgb(126, 177, 97);
+  --backround-colot-secondary: rgb(173, 94, 117);
   --width-main: 70%;
 }
 html {
@@ -17,14 +20,16 @@ h1 {
   font-size: 3em;
 }
 header {
+  height: 70px;
   display: flex;
   height: 50px;
   background-color: var(--backround-colot-main);
   justify-content: space-between;
   padding: 0 5%;
 }
-header span {
+header img {
   max-height: 100%;
+  /* filter: invert(20%); */
 }
 #menu-links {
   display: flex;
@@ -32,8 +37,9 @@ header span {
   column-gap: 20px;
 }
 #menu-links a {
-  color: grey;
+  color: rgb(231, 38, 38);
   text-decoration: none;
+  font-size: 1.5em;
 }
 
 #section-about {
@@ -47,21 +53,20 @@ header span {
 }
 #section-about p,
 #section-about h1 {
-  width: 80%;
   width: var(--width-main);
 }
 #section-gallery {
   background-color: var(--backround-colot-secondary);
   display: flex;
   flex-direction: column;
-  padding: 30px 0;
+  align-items: center;
   justify-content: center;
   row-gap: 40px;
+  padding: 30px 0;
 }
-
 .gallery-card {
   /* height: 200px; */
-  background-color: white;
+  background-color: var(--backround-colot-secondary);
   border: green 5px solid;
   width: 80%;
   width: var(--width-main);
@@ -73,7 +78,65 @@ header span {
   width: 100%;
   border-radius: 5%;
 }
+.gallery-card h2 {
+  color: var(--backround-colot-main);
+  text-align: center;
+  margin: 5% 0;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1499px) {
+  #section-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px 10%;
+    gap: 5px;
+    background-color: aquamarine;
+  }
+  .gallery-card img {
+    /* scale: 10%; */
+    /* object-fit: contain; */
+    width: 100%;
+    border-radius: 5%;
+  }
+}
+@media screen and (min-width: 1500px) {
+  #section-gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 #section-contact {
-  height: 500px;
+  /* height: 500px; */
   background-color: var(--backround-colot-secondary);
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+#section-contact form {
+  width: var(--width-main);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 15%;
+  row-gap: 20px;
+}
+#section-contact input {
+  height: 50px;
+  width: 100%;
+  font-size: 1.5em;
+  border: none;
+}
+#section-contact textarea {
+  width: 100%;
+  height: 250px;
+  font-size: 1.5em;
+  resize: none;
+  border: none;
+}
+#section-contact button {
+  width: 25%;
+  height: 60px;
+  font-size: 1.5em;
+  border: none;
+  background-color: green;
 }
