@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  transition: 3s ease;
 }
 html {
   scroll-behavior: smooth;
@@ -26,6 +27,8 @@ header {
   background-color: var(--backround-colot-main);
   justify-content: space-between;
   padding: 0 5%;
+  position: sticky;
+  top: 0;
 }
 header img {
   max-height: 100%;
@@ -90,6 +93,7 @@ header img {
     grid-template-columns: repeat(2, 1fr);
     padding: 50px 10%;
     gap: 5px;
+    row-gap: 5%;
     align-items: center;
     justify-content: center;
     background-color: aquamarine;
@@ -101,7 +105,25 @@ header img {
     border-radius: 5%;
   }
 }
+
 @media screen and (min-width: 1500px) {
+  @keyframes backgroundColorChange {
+    0% {
+      background-color: var(--backround-colot-main);
+    }
+    25% {
+      background-color: blue;
+    }
+    50% {
+      background-color: red;
+    }
+    75 {
+      background-color: blue;
+    }
+    100% {
+      background-color: var(--backround-colot-main);
+    }
+  }
   #section-gallery {
     display: grid;
     grid-template-columns: repeat(4, 2fr);
@@ -111,9 +133,16 @@ header img {
     gap: 5px;
     align-items: center;
     justify-content: center;
+    animation-name: backgroundColorChange;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
   }
+
   .gallery-card {
     width: 100%;
+  }
+  .gallery-card:nth-child(1) {
+    grid-area: 1 / 1 / 1 / 5;
   }
 }
 
@@ -151,4 +180,9 @@ header img {
   font-size: 1.5em;
   border: none;
   background-color: green;
+}
+@media screen and (min-width: 769px) {
+  #section-contact form {
+    width: 60%;
+  }
 }
