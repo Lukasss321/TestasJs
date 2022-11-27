@@ -90,6 +90,8 @@ header img {
     grid-template-columns: repeat(2, 1fr);
     padding: 50px 10%;
     gap: 5px;
+    align-items: center;
+    justify-content: center;
     background-color: aquamarine;
   }
   .gallery-card img {
@@ -101,7 +103,17 @@ header img {
 }
 @media screen and (min-width: 1500px) {
   #section-gallery {
-    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-template-rows: max-content;
+    background-color: blanchedalmond;
+    padding: 50px 10%;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+  }
+  .gallery-card {
+    width: 100%;
   }
 }
 
