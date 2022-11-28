@@ -90,7 +90,7 @@ header img {
 @media screen and (min-width: 769px) and (max-width: 1499px) {
   #section-gallery {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(5, 2fr);
     padding: 50px 10%;
     gap: 5px;
     row-gap: 5%;
@@ -117,7 +117,7 @@ header img {
     50% {
       background-color: red;
     }
-    75 {
+    75% {
       background-color: blue;
     }
     100% {
