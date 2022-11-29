@@ -96,7 +96,7 @@ header img {
   border-radius: 100px;
   border: 4px solid #000000;
 }
-/* Second section with backround as a color and text*/
+/* Second section with backround as a color and text with logos*/
 #section-about {
   display: flex;
   flex-direction: column;
@@ -134,4 +134,32 @@ header img {
 .logos img {
   height: 40px;
   align-self: flex-start;
+}
+/* Third section with cards and a text*/
+
+#section-launch {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 57.5px;
+  gap: 5px;
+  row-gap: 5%;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+}
+#section-launch h2 {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  color: #111111;
+  padding-bottom: 16px;
+}
+#section-launch p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #555555;
+  padding-bottom: 40px;
+}
+.div-card {
 }
