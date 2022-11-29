@@ -1,23 +1,25 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: Roboto, Arial, sans-serif;
+  font-family: "Inter", sans-serif;
   background-color: rgb(255, 253, 251);
 }
 html {
   scroll-behavior: smooth;
 }
-:root {
+/* :root {
   --backround-colot-main: rgb(250, 248, 248);
   --backround-colot-secondary: #212121;
   --width-main: 70%;
-}
+} */
 /* p {
   font-size: 2em; */
 /* } */
 /* h1 {
   font-size: 3em;
 } */
+
+/*Header with links part and design*/
 header {
   height: 40px;
   display: flex;
@@ -44,25 +46,34 @@ header img {
   font-size: 1em;
 }
 
+/*First section with design and img adjustments*/
 #section-features {
-  height: 300px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
+  /* height: 300px; */
+  display: flex;
+  flex-direction: column;
   padding: 50px 10%;
   gap: 5px;
   row-gap: 5%;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
 }
 #section-features h3 {
-  font-size: small;
-  color: rgb(237, 14, 129);
+  font-weight: 700;
+  font: size 16px;
+  color: #ff3998;
 }
 #section-features h1 {
-  font-family: arial black;
-  font-size: 1.5em;
-  color: black;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 58px;
+  color: #111111;
+}
+#section-features p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #555555;
 }
 #section-features p,
 #section-features h1 {
@@ -71,13 +82,15 @@ header img {
 #section-features img {
   width: 100%;
   border-radius: 2%;
+  /* position: absolute; */
+  right: -250px;
+  /* background-image: ; */
 }
 #section-features button {
-  width: 28%;
-  height: 60px;
+  width: 188px;
+  height: 75px;
   font-size: 1.5em;
-  border: none;
   background-color: rgb(255, 255, 255);
-  border-radius: 20%;
-  border: 3px solid rgb(242, 77, 179);
+  border-radius: 100px;
+  border: 4px solid #000000;
 }
