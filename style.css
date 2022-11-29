@@ -2,5 +2,46 @@
   padding: 0;
   margin: 0;
   font-family: Roboto, Arial, sans-serif;
-  background-color: rgb(241, 238, 235);
+  background-color: rgb(255, 253, 251);
+}
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --backround-colot-main: rgb(250, 248, 248);
+  --backround-colot-secondary: #212121;
+  --width-main: 70%;
+}
+p {
+  font-size: 2em;
+}
+h1 {
+  font-size: 3em;
+}
+header {
+  height: 70px;
+  display: flex;
+  height: 50px;
+  /* background-color: var(--backround-colot-main); */
+  justify-content: space-between;
+  padding: 10px 5%;
+  position: sticky;
+  top: 0;
+}
+header img {
+  max-height: 100%;
+}
+#menu-links a:hover {
+  color: rgb(202, 123, 153);
+}
+
+#menu-links {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+#menu-links a {
+  color: rgb(2, 2, 2);
+  text-decoration: none;
+  font-size: 1.5em;
 }
