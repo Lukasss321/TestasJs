@@ -53,7 +53,7 @@ header img {
 #section-features h3 {
   font-weight: 700;
   font: size 16px;
-  color: #ff3998;
+  color: #ff007b;
 }
 #section-features h1 {
   font-size: 48px;
@@ -65,7 +65,7 @@ header img {
   font-weight: 400;
   font-size: 20px;
   line-height: 150%;
-  color: #555555;
+  color: #000000;
 }
 #section-features p,
 #section-features h1 {
@@ -112,6 +112,13 @@ header img {
   align-items: start;
   gap: 10px;
   padding: 64px 32px;
+}
+@media screen and (min-width: 1100px) {
+  .logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 .logos img {
   height: 40px;
