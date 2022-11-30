@@ -50,6 +50,11 @@ header img {
   background-repeat: no-repeat;
   background-position: 85% 30%;
 }
+@media screen and (min-width: 850px) {
+  #section-features {
+    background-position: 100% 50%;
+  }
+}
 #section-features h3 {
   font-weight: 700;
   font: size 16px;
@@ -93,6 +98,7 @@ header img {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 #section-about h1 {
   font-weight: 500;
   font-size: 40px;
