@@ -9,18 +9,6 @@ body {
 html {
   scroll-behavior: smooth;
 }
-/* :root {
-  --backround-colot-main: rgb(250, 248, 248);
-  --backround-colot-secondary: #212121;
-  --width-main: 70%;
-} */
-/* p {
-  font-size: 2em; */
-/* } */
-/* h1 {
-  font-size: 3em;
-} */
-
 /*Header with links part and design*/
 header {
   height: 40px;
@@ -50,7 +38,6 @@ header img {
 
 /*First section with design and img adjustments*/
 #section-features {
-  /* height: 300px; */
   display: flex;
   flex-direction: column;
   padding: 50px 10%;
@@ -84,9 +71,7 @@ header img {
 #section-features img {
   width: 100%;
   border-radius: 2%;
-  /* position: absolute; */
   right: -250px;
-  /* background-image: ; */
 }
 #section-features button {
   width: 188px;
@@ -121,8 +106,6 @@ header img {
 .logos {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* justify-content: center; */
-  /* align-items: center; */
   align-items: start;
   gap: 10px;
   padding: 64px 32px;
@@ -325,10 +308,8 @@ ul {
   }
 }
 
-.bottom {
+p {
   height: 40px;
-  display: flex;
-  justify-content: space-between;
   padding: 10px 5%;
   font-weight: 400;
   font-size: 20px;
