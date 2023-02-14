@@ -1,0 +1,10 @@
+.hb-header {
+  position: relative;
+  background: red;
+
+  .header-wrapper {
+    margin: 0 auto;
+    max-width: fit-content;
+    background-color: blue;
+  }
+}

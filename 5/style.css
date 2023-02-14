@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+body {
+  background-color: rgb(255, 253, 251);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/*Navigation Bar*/
+header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20%;
+  /* position: fixed; */
+  top: 0;
+  background-color: #56534c;
+  font-size: 100%;
+  /* position: absolute; */
+  opacity: 0.8;
+}
+#menu-links a:hover {
+  color: rgb(0, 0, 0);
+}
+
+#menu-links {
+  height: 70px;
+  width: 1500px;
+  display: flex;
+  align-items: center;
+  column-gap: 45px;
+}
+#menu-links a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+span {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 24px;
+}
+#f1 {
+  width: 100px;
+  padding-top: 1px;
+}
+#f2 {
+  width: 100px;
+  padding-top: 1px;
+}
+/*First section with backround picture*/
+#section-menu1 {
+  height: 900px;
+  background-color: #56534c;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  /* padding: 50px 10%; */
+  /* gap: 5px; */
+  /* row-gap: 10%; */
+  /* align-items: flex-start;
+  justify-content: flex-start;
+  position: relative; */
+  background-image: url("../bakery_foto/img.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  /* background-position: 85% 30%; */
+}
+
+/* @media screen and (min-width: 850px) {
+  #section-features {
+    background-position: 100% 50%;
+  }
+} */
+*/ #menu-content h1 {
+  font-size: 92px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #ffffff;
+}
+#menu-content p {
+  font-weight: 400;
+  font-size: 29px;
+  font-family: fantasy;
+  line-height: 36px;
+  color: #f11313;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-content p,
+.menu-content h1 {
+  /* width: var(--width-main); */
+}
+/* #section-menu1 img {
+  width: 100%;
+  border-radius: 2%;
+  right: -250px;
+} */
+
+#menu-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  font-size: 92px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #ffffff;
+  /* align-items: center; */
+}
+#menu-content button {
+  width: 200px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 24px;
+  letter-spacing: 4.2px;
+  font-family: fantasy;
+  background-color: #56534c;
+  color: rgb(253, 253, 253);
+  opacity: 0.9;
+}
