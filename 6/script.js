@@ -1,97 +1,33 @@
-// Primitive types:
-// String
-// Number
-// Boolean
-// null
-// undefined
+/* ------------------------------ TASK 6 -----------------------------------
+Turimas "users" masyvas. 
 
-// Objektai - beveik viskas, kas nėra primitive type.
+Parašykite funckijas, kurios atlikas nurodytas užduotis
+1. funkcija "getUserAverageAge" - kaip argumentą priims masyvą ir duoto masyvo 
+atveju grąžins visų "users" amžiaus vidurkį kaip skaičių.
+2. funkcija "getUsersNames" -  kaip argumentą priims masyvą ir duoto masyvo 
+atveju grąžins visų "users" vardus naujame masyve pvz., ['John Smith', 'Ann Smith'..].
+-------------------------------------------------------------------------- */
 
-// Arrays
-// const names = ["Lukas", "Ieva"];
-
-// names[2] = "Vaida";
-
-// names.push("Lukas");
-// names.push("Rolandas");
-
-// names.pop();
-// names.pop();
-
-// const poppedName = names.pop();
-
-// names.unshift("Karolis");
-
-// names.shift();
-
-// console.log(names);
-
-// console.log("Popped name: ", poppedName);
-
-/* 
-Exercise 2.
-
-1. Išsirinkite LYGINIUS skaičius ir juos pakelkite kvadratu.
-Išspausdinkite naują masyvą
-Rezultatas: [484, 2116, 7396, 9604]
-
-2. Naudodami pirminį masyvą, suskaičiuokite visų skaičių
-sumą.
-Gautą vertę taip pat išspausdinkite
-Rezultatas: 468
-
-*/
-
-/* 
-Falsey values: 
-""
-0
-null
-undefined
-*/
-
-/* const allNums = [11, 22, 33, 46, 75, 86, 97, 98];
-
-const evenNumbers = [];
+const users = [
+  { id: "1", name: "John Smith", age: 20 },
+  { id: "2", name: "Ann Smith", age: 24 },
+  { id: "3", name: "Tom Jones", age: 31 },
+  { id: "4", name: "Rose Peterson", age: 17 },
+  { id: "5", name: "Alex John", age: 25 },
+  { id: "6", name: "Ronald Jones", age: 63 },
+  { id: "7", name: "Elton Smith", age: 16 },
+  { id: "8", name: "Simon Peterson", age: 30 },
+  { id: "9", name: "Daniel Cane", age: 51 },
+];
 let sum = 0;
 
-for (let i = 0; i < allNums.length; i++) {
-  const currentNum = allNums[i];
+users.forEach(function (num) {
+  sum += num.age;
+});
+getUserAverageAge = sum / users.length;
+console.log(getUserAverageAge);
 
-  // 1 part
-  if (currentNum % 2 === 0) {
-    evenNumbers.push(currentNum ** 2);
-  }
-
-  // 2 part
-  sum = sum + currentNum;
-}
-
-console.log(evenNumbers, sum); */
-
-// Objects
-
-const place = {
-  // <key>: <value>
-  // <property name>: <property value>
-  name: "Lithuania",
-  flagColors: ["yellow", "green", "red"],
-  first: {
-    second: {
-      third: "hello"
-    }
-  },
-  addUp: function (a, b) {
-    return a + b;
-  }
-};
-
-place.first.second.third = 10000;
-
-place.nationalDish = "Cepelinai";
-
-place.first.second.somethingElse = "hello";
-
-place["long name"] = "worked";
-
-console.log(place.addUp(4, 5));
+const UserNames = users.map((getUserNames) => {
+  return getUserNames.name;
+});
+console.log(UserNames);
