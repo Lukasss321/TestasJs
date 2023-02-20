@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-padding: 15%;
+  --min-padding: 50px;
+  --main-color: rgb(37, 220, 199);
+}
+
+header {
+  padding: 40px var(--main-padding);
+  color: white;
+  background-color: var(--main-color);
+}
+
+main {
+  padding: 40px var(--main-padding) 0 var(--main-padding);
+}
+
+#filter-wrapper {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#property-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 50px;
+  margin-top: 20px;
+}
+
+#property-wrapper > div {
+  border: 1px solid rgb(223, 223, 223);
+  width: 200px;
+  height: 300px;
+  box-shadow: 0px 5px 5px 1px gainsboro;
+}
+
+.image-wrapper > img {
+  max-width: 100%;
+}
+
+.image-wrapper {
+  display: flex;
+  align-items: center;
+  height: 45%;
+}
+
+.description-wrapper {
+  height: 55%;
+  padding: 20px 10px;
+}
+
+.description-wrapper > p:last-child {
+  margin-top: 20px;
+}
+
+#filter-wrapper > button {
+  background-color: var(--main-color);
+  border-color: white;
+}
+
+.inactive-button {
+  background-color: white;
+  border-color: rgb(211, 211, 211);
+  margin-right: 5px;
+}
+
+#filter-wrapper > button,
+#filter-controls > button {
+  border-style: solid;
+  border-width: 1px;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+#filter-wrapper > button:hover,
+#filter-controls > button:hover {
+  cursor: pointer;
+}
+
+.active-button {
+  background-color: white;
+  border-color: var(--main-color);
+  color: var(--main-color);
+  margin-right: 5px;
+}
+
+/* add.html */
+#input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+#input-wrapper > textarea {
+  max-width: 100%;
+  max-height: 200px;
+}
+
+#input-wrapper > select {
+  width: 100px;
+}
+
+#input-wrapper > button {
+  background-color: var(--main-color);
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+  padding: 8px;
+  border-radius: 4px;
+  width: 100px;
+}
